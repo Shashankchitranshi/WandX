@@ -44,4 +44,92 @@ body {
             }
         }
     }
+    .token-holder {
+        background-color: #F3F3F3;
+        padding: 20px 0px;
+        text-align: center;
+        margin-bottom: 20px;
+        h5 {
+            font-family: Helvetica-Bold;
+            font-size: 20px;
+            color: #D1D1D1;
+            margin: 0;
+            display: inline-flex;
+        }
+        input {
+            border: none;
+        }
+        .input_field {
+            border-bottom: 2px solid #979797;
+            background-color: transparent;
+            &:focus {
+                // outline-offset: -2px;
+                outline: none;
+            }
+        }
+    }
+    .trading-holder {
+        text-align: center;
+        margin-bottom: 40px;
+        .price {
+            width: 12.66%;
+            display: inline-block;
+            text-align: left;
+            border: 1px solid #E2E2E2;
+            border-radius: 1px;
+            box-sizing: border-box;
+            margin: 0px 15px;
+            min-width: 135px;
+            padding: 6px;
+            span {
+                font-family: Helvetica-Light;
+                font-size: 10px;
+                color: #302E2E;
+            }
+            p {
+                font-family: Helvetica-Light;
+                font-size: 20px;
+                color: #27C359;
+                margin: 0;
+            }
+        }
+        .xrp-btn {
+            background-image: linear-gradient(-180deg, #9EEDC7 0%, #72BDAB 100%);
+            border: 1px solid #E2E2E2;
+            border-radius: 4px;
+            vertical-align: top;
+            height: 55px;
+            text-decoration: none;
+            outline: none;
+            p {
+                font-family: Helvetica-Bold;
+                font-size: 20px;
+                color: #FFFFFF;
+            }
+        }
+    }
+    .order-tables {
+        .table-holder {
+            width: 22%;
+            margin: 0px 15px;
+            border-collapse: collapse;
+            .order-main-header {
+                th {
+                    font-family: Helvetica-Bold;
+                    font-size: 14px;
+                    color: #302E2E;
+                    padding: 10px 0px 10px 10px;
+                    border: none;
+                    // height: 33px;
+                }
+            }
+            th,
+            td {
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+                width: 33%;
+            }
+        }
+    }
 }
