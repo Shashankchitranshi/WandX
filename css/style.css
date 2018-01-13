@@ -58,7 +58,8 @@ body {
   body .tabcontent .tab {
     display: none; }
   body .tabcontent .tab.active {
-    display: block; }
+    display: block;
+    position: relative; }
   body .tabcontent .token-holder {
     background-color: #F3F3F3;
     padding: 20px 0px;
@@ -319,5 +320,59 @@ body {
           line-height: 20px;
           display: inline-block;
           vertical-align: text-bottom; }
+  body .graph {
+    width: 66%;
+    position: absolute;
+    top: 70%;
+    left: 78px;
+    padding-bottom: 40px;
+    /* Hide default HTML checkbox */
+    /* The slider */
+    /* Rounded sliders */ }
+    body .graph p {
+      font-size: 14px;
+      display: inline-block;
+      font-family: Helvetica; }
+    body .graph .switch {
+      position: relative;
+      display: inline-block;
+      width: 40px;
+      height: 18px;
+      float: right;
+      margin: 12px; }
+    body .graph .switch input {
+      display: none; }
+    body .graph .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s; }
+    body .graph .slider:before {
+      position: absolute;
+      content: "";
+      height: 15px;
+      width: 15px;
+      left: 0px;
+      bottom: 2px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s; }
+    body .graph input:checked + .slider {
+      background-color: #46b74b; }
+    body .graph input:focus + .slider {
+      box-shadow: 0 0 1px #46b74b; }
+    body .graph input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px); }
+    body .graph .slider.round {
+      border-radius: 34px; }
+    body .graph .slider.round:before {
+      border-radius: 50%; }
 
 /*# sourceMappingURL=style.css.map */
