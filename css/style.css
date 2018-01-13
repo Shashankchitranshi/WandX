@@ -73,55 +73,36 @@ body {
       background-color: transparent; }
       body .tabcontent .token-holder .input_field:focus {
         outline: none; }
-  body .tabcontent .trading-holder {
-    text-align: center;
-    margin-bottom: 40px; }
-    body .tabcontent .trading-holder .price {
-      width: 12.66%;
-      display: inline-block;
-      text-align: left;
-      border: 1px solid #E2E2E2;
-      border-radius: 1px;
-      box-sizing: border-box;
-      margin: 0px 15px;
-      min-width: 135px;
-      padding: 6px; }
-      body .tabcontent .trading-holder .price span {
-        font-family: Helvetica-Light;
-        font-size: 10px;
-        color: #302E2E; }
-      body .tabcontent .trading-holder .price p {
-        font-family: Helvetica-Light;
-        font-size: 20px;
-        color: #27C359;
-        margin: 0; }
-    body .tabcontent .trading-holder .xrp-btn {
-      background-image: linear-gradient(-180deg, #9EEDC7 0%, #72BDAB 100%);
-      border: 1px solid #E2E2E2;
-      border-radius: 4px;
-      vertical-align: top;
-      height: 55px;
-      text-decoration: none;
-      outline: none; }
-      body .tabcontent .trading-holder .xrp-btn p {
-        font-family: Helvetica-Bold;
-        font-size: 20px;
-        color: #FFFFFF; }
-  body .tabcontent .order-tables .table-holder {
-    width: 22%;
-    margin: 0px 15px;
-    border-collapse: collapse; }
-    body .tabcontent .order-tables .table-holder .order-main-header th {
-      font-family: Helvetica-Bold;
-      font-size: 14px;
-      color: #302E2E;
-      padding: 10px 0px 10px 10px;
-      border: none; }
-    body .tabcontent .order-tables .table-holder th,
-    body .tabcontent .order-tables .table-holder td {
-      padding: 8px;
-      text-align: left;
-      border-bottom: 1px solid #ddd;
-      width: 33%; }
+  body .order-tables {
+    text-align: center; }
+    body .order-tables .table-holder {
+      width: 21%;
+      margin: 0px 12px;
+      border-collapse: collapse;
+      display: inline-block; }
+      body .order-tables .table-holder table {
+        width: 100%; }
+        body .order-tables .table-holder table .order-main-header th {
+          font-family: Helvetica-Bold;
+          font-size: 14px;
+          color: #302E2E;
+          padding: 10px 0px 10px 10px;
+          border: none; }
+        body .order-tables .table-holder table .order-sub-heading th {
+          color: #BBBBBB !important;
+          height: 30px;
+          font-family: Helvetica-Light;
+          font-size: 12px; }
+        body .order-tables .table-holder table th,
+        body .order-tables .table-holder table td {
+          padding: 14px 0px 14px 10px;
+          text-align: left;
+          border-bottom: 1px solid #E2E2E2;
+          width: 33%;
+          color: #302E2E;
+          font-size: 12px; }
+          body .order-tables .table-holder table th:nth-child(2),
+          body .order-tables .table-holder table td:nth-child(2) {
+            color: #27C359; }
 
 /*# sourceMappingURL=style.css.map */
