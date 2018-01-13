@@ -2,7 +2,7 @@ body {
     margin: 0px;
     .header {
         background: #2C2950;
-        padding: 20px 60px;
+        padding: 20px 60px 0px;
         position: relative;
         h2 {
             font-family: Helvetica;
@@ -43,27 +43,56 @@ body {
                 border-bottom: 2px solid #AFF8C6;
             }
         }
-    }
-    .token-holder {
-        background-color: #F3F3F3;
-        padding: 20px 0px;
-        text-align: center;
-        margin-bottom: 20px;
-        h5 {
-            font-family: Helvetica-Bold;
-            font-size: 20px;
-            color: #D1D1D1;
-            margin: 0;
-            display: inline-flex;
-        }
-        input {
+        .tablinks {
+            background: none;
             border: none;
-        }
-        .input_field {
-            border-bottom: 2px solid #979797;
-            background-color: transparent;
+            margin-right: 80px;
+            padding-bottom: 15px;
             &:focus {
-                outline: none;
+                outline: transparent;
+            }
+            &.active {
+                border-bottom: 4px solid #AFF8C6;
+                ;
+            }
+            a {
+                font-family: Helvetica;
+                font-size: 16px;
+                color: #FFFFFF;
+                text-decoration: none;
+                transition: all linear 0.15s;
+            }
+        }
+    }
+    .tabcontent {
+        .tab {
+            display: none;
+        }
+        .tab.active {
+            display: block;
+        }
+        .token-holder {
+            background-color: #F3F3F3;
+            padding: 20px 0px;
+            text-align: center;
+            margin-bottom: 20px;
+            h5 {
+                font-family: Helvetica-Bold;
+                font-size: 20px;
+                color: #D1D1D1;
+                margin: 0;
+                display: inline-flex;
+            }
+            input {
+                border: none;
+            }
+            .input_field {
+                border-bottom: 2px solid #979797;
+                background-color: transparent;
+                &:focus {
+                    // outline-offset: -2px;
+                    outline: none;
+                }
             }
         }
     }
@@ -108,46 +137,45 @@ body {
         }
     }
     .order-tables {
-      text-align: center;
+        text-align: center;
         .table-holder {
             width: 21%;
             margin: 0px 12px;
             border-collapse: collapse;
             display: inline-block;
-          table{
-            width: 100%;
-            .order-main-header {
-                th {
-                    font-family: Helvetica-Bold;
-                    font-size: 14px;
+            table {
+                width: 100%;
+                .order-main-header {
+                    th {
+                        font-family: Helvetica-Bold;
+                        font-size: 14px;
+                        color: #302E2E;
+                        padding: 10px 0px 10px 10px;
+                        border: none;
+                        // height: 33px;
+                    }
+                }
+                .order-sub-heading {
+                    th {
+                        color: #BBBBBB !important;
+                        height: 30px;
+                        font-family: Helvetica-Light;
+                        font-size: 12px;
+                    }
+                }
+                th,
+                td {
+                    padding: 14px 0px 14px 10px;
+                    text-align: left;
+                    border-bottom: 1px solid #E2E2E2;
+                    width: 33%;
                     color: #302E2E;
-                    padding: 10px 0px 10px 10px;
-                    border: none;
-
-                    // height: 33px;
+                    font-size: 12px;
+                    &:nth-child(2) {
+                        color: #27C359;
+                    }
                 }
             }
-            .order-sub-heading{
-                th{
-                  color: #BBBBBB !important;
-                  height: 30px;
-                  font-family: Helvetica-Light;
-                  font-size: 12px;
-                }
-            }
-            th,
-            td {
-                padding:14px 0px 14px 10px;
-                text-align: left;
-                border-bottom: 1px solid #E2E2E2;
-                width: 33%;
-                color: #302E2E;
-                font-size: 12px;
-                &:nth-child(2){
-                  color: #27C359;
-                }
-            }
-          }
         }
     }
 }

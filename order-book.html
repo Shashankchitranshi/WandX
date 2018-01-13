@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,8 +8,9 @@
     <title>WandX</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <section1>
+    <section>
         <div class="header">
             <h2>WAND X</h2>
             <div class="userName">
@@ -19,160 +21,174 @@
                 <p>MetaMask ETH Value</p>
                 <span>100.12345678</span>
             </div>
-            <div class="tab">
-                <button class="tablinks">Dashboard</button>
-                <button class="tablinks">Order Book</button>
-                <button class="tablinks">Token Details</button>
-                <button class="tablinks ">Order History</button>
-                <button class="tablinks">Portfolio</button>
-            </div>
-            <div id="orderBook" class="tabcontent">
-
+            <div class="tabs">
+                <button class="tablinks ">
+                    <a href="#tab1">Dashboard</a>
+                </button>
+                <button class="tablinks active">
+                    <a href="#tab2">Order Book</a>
+                </button>
+                <button class="tablinks">
+                    <a href="#tab3">Token Details</a>
+                </button>
+                <button class="tablinks ">
+                    <a href="#tab4">Order History</a>
+                </button>
+                <button class="tablinks">
+                    <a href="#tab4">Portfolio</a>
+                </button>
             </div>
         </div>
+    </section>
+    <div class="tabcontent">
+        <div id="tab2" class="tab active">
+            <section class="token-holder">
+                <h5>What Tokens you want to buy: </h5>
+                <input type="text" class="input_field">
+                <h5> for</h5>
+                <input type="text" class="input_field">
+            </section>
+            <section class="trading-holder">
+                <div class="price">
+                    <span>Trading Volume</span>
+                    <p>100.12345678</p>
+                </div>
+                <div class="price">
+                    <span>24 Hr High</span>
+                    <p>100.12345678</p>
+                </div>
+                <div class="price">
+                    <span>24Hr Low</span>
+                    <p>100.12345678</p>
+                </div>
+                <div class="price">
+                    <span>Last traded Price</span>
+                    <p>100.12345678</p>
+                </div>
+                <div class="price">
+                    <span>Forecast</span>
+                    <p>100.12345678</p>
+                </div>
+                <button class="price xrp-btn">
+                   <span>Token Analytics</span>
+                   <p>XRP</p>
+                </button>
+            </section>
+            <section class="order-tables">
+                <div class="table-holder">
+                    <table>
+                        <tr class="order-main-header">
+                            <th colspan="3">BUY ORDER</th>
+                        </tr>
+                        <tr class="order-sub-heading">
+                            <th>Quanity</th>
+                            <th>Gain</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>300</td>
+                            <td>23%</td>
+                            <td>0.12345678</td>
+                        </tr>
+                        <tr>
+                            <td>300</td>
+                            <td>23%</td>
+                            <td>0.12345678</td>
+                        </tr>
+                        <tr>
+                            <td>300</td>
+                            <td>23%</td>
+                            <td>0.12345678</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="table-holder">
+                    <table>
+                        <tr class="order-main-header ">
+                            <th colspan="3">SELL ORDER</th>
+                        </tr>
+                        <tr class="order-sub-heading">
+                            <th>Quanity</th>
+                            <th>Gain</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>300</td>
+                            <td>23%</td>
+                            <td>0.12345678</td>
+                        </tr>
+                        <tr>
+                            <td>300</td>
+                            <td>23%</td>
+                            <td>0.12345678</td>
+                        </tr>
+                        <tr>
+                            <td>300</td>
+                            <td>23%</td>
+                            <td>0.12345678</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="table-holder">
+                    <table>
+                        <tr class="order-main-header">
+                            <th colspan="3">TRADE HISTORY</th>
+                        </tr>
+                        <tr class="order-sub-heading">
+                            <th>Quanity</th>
+                            <th>Gain</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>300</td>
+                            <td>23%</td>
+                            <td>0.12345678</td>
+                        </tr>
+                        <tr>
+                            <td>300</td>
+                            <td>23%</td>
+                            <td>0.12345678</td>
+                        </tr>
+                        <tr>
+                            <td>300</td>
+                            <td>23%</td>
+                            <td>0.12345678</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="table-holder">
+                    <table>
+                        <tr class="order-main-header">
+                            <th>BUY ORDER</th>
+                        </tr>
+                        <tr class="order-sub-heading">
+                            <th>Quanity</th>
+                            <th>Gain</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>300</td>
+                            <td>23%</td>
+                            <td>0.12345678</td>
+                        </tr>
+                        <tr>
+                            <td>300</td>
+                            <td>23%</td>
+                            <td>0.12345678</td>
+                        </tr>
+                        <tr>
+                            <td>300</td>
+                            <td>23%</td>
+                            <td>0.12345678</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
+
     </section1>
-    <section class="token-holder">
-       <h5>What Tokens you want to buy: </h5>
-       <input type="text" class="input_field">
-       <h5> for</h5>
-       <input type="text" class="input_field">
-    </section>
-    <section class="trading-holder">
-       <div class="price">
-          <span>Trading Volume</span>
-          <p>100.12345678</p>
-       </div>
-       <div class="price">
-          <span>24 Hr High</span>
-          <p>100.12345678</p>
-       </div>
-       <div class="price">
-          <span>24Hr Low</span>
-          <p>100.12345678</p>
-       </div>
-       <div class="price">
-          <span>Last traded Price</span>
-          <p>100.12345678</p>
-       </div>
-       <div class="price">
-          <span>Forecast</span>
-          <p>100.12345678</p>
-       </div>
-       <button class="price xrp-btn">
-          <span>Token Analytics</span>
-          <p>XRP</p>
-       </button>
-    </section>
-    <section class="order-tables">
-      <div class="table-holder">
-        <table>
-              <tr class="order-main-header">
-                <th colspan="3">BUY ORDER</th>
-              </tr>
-              <tr class="order-sub-heading">
-                <th>Quanity</th>
-                <th>Gain</th>
-                <th>Price</th>
-              </tr>
-              <tr>
-                <td>300</td>
-                <td>23%</td>
-                <td>0.12345678</td>
-              </tr>
-              <tr>
-                <td>300</td>
-                <td>23%</td>
-                <td>0.12345678</td>
-              </tr>
-              <tr>
-                <td>300</td>
-                <td>23%</td>
-                <td>0.12345678</td>
-              </tr>
-       </table>
-      </div>
-      <div class="table-holder">
-        <table>
-              <tr class="order-main-header ">
-                <th colspan="3">SELL ORDER</th>
-              </tr>
-              <tr class="order-sub-heading">
-                <th>Quanity</th>
-                <th>Gain</th>
-                <th>Price</th>
-              </tr>
-              <tr>
-                <td>300</td>
-                <td>23%</td>
-                <td>0.12345678</td>
-              </tr>
-              <tr>
-                <td>300</td>
-                <td>23%</td>
-                <td>0.12345678</td>
-              </tr>
-              <tr>
-                <td>300</td>
-                <td>23%</td>
-                <td>0.12345678</td>
-              </tr>
-       </table>
-      </div>
-      <div  class="table-holder">
-        <table>
-              <tr class="order-main-header">
-                <th colspan="3">TRADE HISTORY</th>
-              </tr>
-              <tr class="order-sub-heading">
-                <th>Quanity</th>
-                <th>Gain</th>
-                <th>Price</th>
-              </tr>
-              <tr>
-                <td>300</td>
-                <td>23%</td>
-                <td>0.12345678</td>
-              </tr>
-              <tr>
-                <td>300</td>
-                <td>23%</td>
-                <td>0.12345678</td>
-              </tr>
-              <tr>
-                <td>300</td>
-                <td>23%</td>
-                <td>0.12345678</td>
-              </tr>
-       </table>
-      </div>
-  <div class="table-holder">
-    <table >
-          <tr class="order-main-header">
-            <th>BUY ORDER</th>
-          </tr>
-          <tr class="order-sub-heading">
-            <th>Quanity</th>
-            <th>Gain</th>
-            <th>Price</th>
-          </tr>
-          <tr>
-            <td>300</td>
-            <td>23%</td>
-            <td>0.12345678</td>
-          </tr>
-          <tr>
-            <td>300</td>
-            <td>23%</td>
-            <td>0.12345678</td>
-          </tr>
-          <tr>
-            <td>300</td>
-            <td>23%</td>
-            <td>0.12345678</td>
-          </tr>
-   </table>
-  </div>
-</section>
+
 </body>
 
 </html>
