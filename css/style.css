@@ -245,7 +245,7 @@ body {
               line-height: 16px;
               margin: 0; }
           body .order-tables .table-holder .tabcontent .tab .innerContent .confirm {
-            border-bottom: 5px solid #000;
+            border-bottom: 5px solid #302E2E;
             padding-bottom: 20px; }
             body .order-tables .table-holder .tabcontent .tab .innerContent .confirm input[type="checkbox"] {
               margin: 0;

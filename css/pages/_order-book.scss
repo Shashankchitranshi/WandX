@@ -88,12 +88,11 @@ body {
                 margin: 0;
                 display: inline-flex;
             }
-
             .input_field {
-              background-color: transparent;
-              border: none;
-              width: 126px;
-              border-bottom: 2px solid #979797;
+                background-color: transparent;
+                border: none;
+                width: 126px;
+                border-bottom: 2px solid #979797;
                 &:focus {
                     outline: none;
                 }
@@ -310,7 +309,7 @@ body {
                             }
                         }
                         .confirm {
-                            border-bottom: 5px solid #000;
+                            border-bottom: 5px solid #302E2E;
                             padding-bottom: 20px;
                             input[type="checkbox"] {
                                 margin: 0;
