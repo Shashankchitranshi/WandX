@@ -9,6 +9,7 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <section>
         <div class="header">
@@ -36,6 +37,9 @@
                 </button>
                 <button class="tablinks">
                     <a href="#tab4">Portfolio</a>
+                </button>
+                <button class="tablinks right">
+                    <a href="#tab5">Wallet</a>
                 </button>
             </div>
         </div>
@@ -170,38 +174,63 @@
                     </table>
                 </div>
                 <div class="table-holder">
-                    <table>
-                        <tr class="order-main-header">
-                            <th>BUY ORDER</th>
-                        </tr>
-                        <tr class="order-sub-heading">
-                            <th>Quanity</th>
-                            <th>Gain</th>
-                            <th>Price</th>
-                        </tr>
-                        <tr>
-                            <td>300</td>
-                            <td>23%</td>
-                            <td>0.12345678</td>
-                        </tr>
-                        <tr>
-                            <td>300</td>
-                            <td>23%</td>
-                            <td>0.12345678</td>
-                        </tr>
-                        <tr>
-                            <td>300</td>
-                            <td>23%</td>
-                            <td>0.12345678</td>
-                        </tr>
-                    </table>
+                    <div class="tabs">
+                        <button class="tablinks active">
+                            <a href="#buy">BUY</a>
+                        </button>
+                        <button class="tablinks ">
+                            <a href="#sell">SELL</a>
+                        </button>
+                    </div>
+                    <div class="tabcontent">
+                        <div id="buy" class="tab active">
+                            <div class="nameVal">
+                                <p>XRP</p>
+                                <div class="rightVal">
+                                    <p>100.12345678</p>
+                                    <p>ETH Balance</p>
+                                </div>
+                            </div>
+                            <div class="innerContent">
+                                <div class="val">
+                                    <p>Quantity</p>
+                                    <input type="number" placeholder="Value">
+                                </div>
+                                <div class="val">
+                                    <p>Price</p>
+                                    <input type="number" placeholder="Value">
+                                </div>
+                                <div class="lastTrade">
+                                    <p>Last traded price:</p>
+                                    <span>100.012345 ETH</span>
+                                </div>
+                                <div class="fee">
+                                    <p>GAS FEE <span>(.02%)</span></p>
+                                    <p>EXCHANGE FEE <span>(.01%)</span> </p>
+                                </div>
+                                <div class="confirm">
+                                    <input type="checkbox">
+                                    <p>Use Wand Token to waive off exchange fee</p>
+                                </div>
+                                <div class="total">
+                                    <p>Total:</p>
+                                    <span>100.12345678 ETH <span>100.12345678 US$</span></span>
+                                </div>
+                                <div class="btn">
+                                    <button>Submit <img src="images/right-arrow.png" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alert">
+                        <p>i</p>
+                        <div class="arrow-right"></div>
+                        <span>Alert: If Quantity X Price exceeds Wallet Balance</span>
+                    </div>
                 </div>
             </section>
         </div>
     </div>
-
-    </section1>
-
 </body>
 
 </html>
