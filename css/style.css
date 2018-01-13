@@ -28,12 +28,12 @@ body {
     body .header .ethValue {
       margin: 30px 0; }
       body .header .ethValue p {
-        font-family: Helvetica;
+        font-family: Helvetica-Light;
         font-size: 10px;
         color: #AFF8C6;
         margin: 3px; }
       body .header .ethValue span {
-        font-family: Helvetica;
+        font-family: Helvetica-Light;
         font-size: 20px;
         color: #AFF8C6;
         border-bottom: 2px solid #AFF8C6; }
@@ -52,6 +52,9 @@ body {
         color: #FFFFFF;
         text-decoration: none;
         transition: all linear 0.15s; }
+      body .header .tablinks.right {
+        float: right;
+        margin: 0; }
   body .tabcontent .tab {
     display: none; }
   body .tabcontent .tab.active {
@@ -109,12 +112,14 @@ body {
         font-size: 20px;
         color: #FFFFFF; }
   body .order-tables {
-    text-align: center; }
+    text-align: center;
+    padding: 40px; }
     body .order-tables .table-holder {
-      width: 21%;
+      width: 22%;
       margin: 0px 12px;
       border-collapse: collapse;
-      display: inline-block; }
+      display: inline-block;
+      vertical-align: top; }
       body .order-tables .table-holder table {
         width: 100%; }
         body .order-tables .table-holder table .order-main-header th {
@@ -127,7 +132,8 @@ body {
           color: #BBBBBB !important;
           height: 30px;
           font-family: Helvetica-Light;
-          font-size: 12px; }
+          font-size: 12px;
+          padding-bottom: 0px; }
         body .order-tables .table-holder table th,
         body .order-tables .table-holder table td {
           padding: 14px 0px 14px 10px;
@@ -139,5 +145,157 @@ body {
           body .order-tables .table-holder table th:nth-child(2),
           body .order-tables .table-holder table td:nth-child(2) {
             color: #27C359; }
+      body .order-tables .table-holder .tabs {
+        text-align: left; }
+        body .order-tables .table-holder .tabs .tablinks {
+          background: none;
+          border: none;
+          margin-right: 5px; }
+          body .order-tables .table-holder .tabs .tablinks:focus {
+            outline: transparent; }
+          body .order-tables .table-holder .tabs .tablinks.active {
+            border-bottom: 4px solid #000; }
+            body .order-tables .table-holder .tabs .tablinks.active a {
+              color: #302E2E; }
+          body .order-tables .table-holder .tabs .tablinks a {
+            font-family: Helvetica-Bold;
+            font-size: 14px;
+            color: #BBBBBB;
+            text-decoration: none;
+            transition: all linear 0.15s; }
+      body .order-tables .table-holder .tabcontent {
+        text-align: left;
+        margin-top: 10px; }
+        body .order-tables .table-holder .tabcontent #buy {
+          border: 1px solid #E2E2E2;
+          padding-bottom: 40px; }
+        body .order-tables .table-holder .tabcontent .tab .nameVal {
+          padding: 0px 15px;
+          border-bottom: 1px solid #E2E2E2; }
+          body .order-tables .table-holder .tabcontent .tab .nameVal p {
+            font-family: Helvetica-Bold;
+            font-size: 20px;
+            display: inline-block; }
+          body .order-tables .table-holder .tabcontent .tab .nameVal .rightVal {
+            float: right;
+            display: inline-block;
+            margin-top: 20px; }
+            body .order-tables .table-holder .tabcontent .tab .nameVal .rightVal p {
+              font-family: Helvetica-Light;
+              font-size: 10px;
+              color: #302E2E;
+              display: block;
+              margin: 0; }
+        body .order-tables .table-holder .tabcontent .tab .innerContent {
+          padding: 0 15px; }
+          body .order-tables .table-holder .tabcontent .tab .innerContent .val {
+            margin-top: 25px; }
+            body .order-tables .table-holder .tabcontent .tab .innerContent .val p {
+              font-family: Helvetica;
+              font-size: 14px;
+              color: #504D4D;
+              margin: 5px 0; }
+            body .order-tables .table-holder .tabcontent .tab .innerContent .val input {
+              border: 1px solid #BBBBBB;
+              border-radius: 3px;
+              padding: 10px;
+              width: 230px; }
+              body .order-tables .table-holder .tabcontent .tab .innerContent .val input:focus {
+                outline: transparent; }
+          body .order-tables .table-holder .tabcontent .tab .innerContent .lastTrade p {
+            font-family: Helvetica;
+            font-size: 12px;
+            color: #20D07F;
+            margin: 5px 8px;
+            display: inline-block; }
+          body .order-tables .table-holder .tabcontent .tab .innerContent .lastTrade span {
+            font-family: Helvetica;
+            font-size: 12px;
+            color: #20D07F;
+            float: right;
+            margin: 5px 8px; }
+          body .order-tables .table-holder .tabcontent .tab .innerContent .fee {
+            margin: 25px 0 10px; }
+            body .order-tables .table-holder .tabcontent .tab .innerContent .fee p {
+              font-family: Helvetica;
+              font-size: 12px;
+              color: #504D4D;
+              line-height: 16px;
+              margin: 0; }
+          body .order-tables .table-holder .tabcontent .tab .innerContent .confirm {
+            border-bottom: 5px solid #000;
+            padding-bottom: 20px; }
+            body .order-tables .table-holder .tabcontent .tab .innerContent .confirm input[type="checkbox"] {
+              margin: 0;
+              width: 16px;
+              height: 16px; }
+            body .order-tables .table-holder .tabcontent .tab .innerContent .confirm p {
+              font-family: Helvetica;
+              font-size: 11px;
+              color: #6F6F6F;
+              display: inline-block;
+              margin: 2px;
+              vertical-align: top; }
+          body .order-tables .table-holder .tabcontent .tab .innerContent .total {
+            margin-top: 15px; }
+            body .order-tables .table-holder .tabcontent .tab .innerContent .total p {
+              font-family: Helvetica-Bold;
+              font-size: 18px;
+              display: inline-block;
+              margin: 0;
+              vertical-align: top; }
+            body .order-tables .table-holder .tabcontent .tab .innerContent .total span {
+              font-family: Helvetica-Light;
+              font-size: 18px;
+              text-align: right;
+              display: inline-block;
+              margin-left: 35px; }
+              body .order-tables .table-holder .tabcontent .tab .innerContent .total span span {
+                font-family: Helvetica-Light;
+                font-size: 10px;
+                display: block; }
+          body .order-tables .table-holder .tabcontent .tab .innerContent .btn {
+            text-align: center;
+            margin-top: 30px; }
+            body .order-tables .table-holder .tabcontent .tab .innerContent .btn button {
+              background: #4A90E2;
+              border-radius: 4px;
+              color: #fff;
+              font-size: 18px;
+              padding: 12px 40px;
+              border: none; }
+              body .order-tables .table-holder .tabcontent .tab .innerContent .btn button img {
+                vertical-align: middle;
+                margin-left: 10px;
+                height: 25px; }
+      body .order-tables .table-holder .alert {
+        border: 1px solid #D0021B;
+        text-align: left;
+        border-radius: 4px;
+        margin-top: 25px; }
+        body .order-tables .table-holder .alert p {
+          font-family: Helvetica-Oblique;
+          font-size: 24px;
+          color: #FFFFFF;
+          background-color: #D0021B;
+          width: 30px;
+          padding: 24px 1px;
+          margin: 0;
+          display: inline-block;
+          text-align: center; }
+        body .order-tables .table-holder .alert .arrow-right {
+          width: 0px;
+          height: 0px;
+          border-top: 8px solid transparent;
+          border-bottom: 8px solid transparent;
+          border-left: 10px solid #D0021B;
+          display: inline-block;
+          margin-left: -5px; }
+        body .order-tables .table-holder .alert span {
+          font-size: 10px;
+          color: #6F6F6F;
+          line-height: 20px;
+          display: inline-block;
+          vertical-align: text-bottom; }
 
 /*# sourceMappingURL=style.css.map */

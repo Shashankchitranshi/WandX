@@ -1,5 +1,5 @@
 body {
-  font-family: Helvetica;
+    font-family: Helvetica;
     margin: 0px;
     .header {
         background: #2C2950;
@@ -32,13 +32,13 @@ body {
         .ethValue {
             margin: 30px 0;
             p {
-                font-family: Helvetica;
+                font-family: Helvetica-Light;
                 font-size: 10px;
                 color: #AFF8C6;
                 margin: 3px;
             }
             span {
-                font-family: Helvetica;
+                font-family: Helvetica-Light;
                 font-size: 20px;
                 color: #AFF8C6;
                 border-bottom: 2px solid #AFF8C6;
@@ -62,6 +62,10 @@ body {
                 color: #FFFFFF;
                 text-decoration: none;
                 transition: all linear 0.15s;
+            }
+            &.right {
+                float: right;
+                margin: 0;
             }
         }
     }
@@ -139,11 +143,13 @@ body {
     }
     .order-tables {
         text-align: center;
+        padding: 40px;
         .table-holder {
-            width: 21%;
+            width: 22%;
             margin: 0px 12px;
             border-collapse: collapse;
             display: inline-block;
+            vertical-align: top;
             table {
                 width: 100%;
                 .order-main-header {
@@ -162,6 +168,7 @@ body {
                         height: 30px;
                         font-family: Helvetica-Light;
                         font-size: 12px;
+                        padding-bottom: 0px;
                     }
                 }
                 th,
@@ -175,6 +182,197 @@ body {
                     &:nth-child(2) {
                         color: #27C359;
                     }
+                }
+            }
+            .tabs {
+                text-align: left;
+                .tablinks {
+                    background: none;
+                    border: none;
+                    margin-right: 5px;
+                    &:focus {
+                        outline: transparent;
+                    }
+                    &.active {
+                        border-bottom: 4px solid #000;
+                        a {
+                            color: #302E2E;
+                        }
+                    }
+                    a {
+                        font-family: Helvetica-Bold;
+                        font-size: 14px;
+                        color: #BBBBBB;
+                        text-decoration: none;
+                        transition: all linear 0.15s;
+                    }
+                }
+            }
+            .tabcontent {
+                text-align: left;
+                margin-top: 10px;
+                #buy {
+                    border: 1px solid #E2E2E2;
+                    padding-bottom: 40px;
+                }
+                .tab {
+                    .nameVal {
+                        padding: 0px 15px;
+                        border-bottom: 1px solid #E2E2E2;
+                        p {
+                            font-family: Helvetica-Bold;
+                            font-size: 20px;
+                            display: inline-block;
+                        }
+                        .rightVal {
+                            float: right;
+                            display: inline-block;
+                            margin-top: 20px;
+                            p {
+                                font-family: Helvetica-Light;
+                                font-size: 10px;
+                                color: #302E2E;
+                                display: block;
+                                margin: 0
+                            }
+                        }
+                    }
+                    .innerContent {
+                        padding: 0 15px;
+                        .val {
+                            margin-top: 25px;
+                            p {
+                                font-family: Helvetica;
+                                font-size: 14px;
+                                color: #504D4D;
+                                margin: 5px 0;
+                            }
+                            input {
+                                border: 1px solid #BBBBBB;
+                                border-radius: 3px;
+                                padding: 10px;
+                                width: 230px;
+                                &:focus {
+                                    outline: transparent;
+                                }
+                            }
+                        }
+                        .lastTrade {
+                            p {
+                                font-family: Helvetica;
+                                font-size: 12px;
+                                color: #20D07F;
+                                margin: 5px 8px;
+                                display: inline-block;
+                            }
+                            span {
+                                font-family: Helvetica;
+                                font-size: 12px;
+                                color: #20D07F;
+                                float: right;
+                                margin: 5px 8px;
+                            }
+                        }
+                        .fee {
+                            margin: 25px 0 10px;
+                            p {
+                                font-family: Helvetica;
+                                font-size: 12px;
+                                color: #504D4D;
+                                line-height: 16px;
+                                margin: 0;
+                            }
+                        }
+                        .confirm {
+                            border-bottom: 5px solid #000;
+                            padding-bottom: 20px;
+                            input[type="checkbox"] {
+                                margin: 0;
+                                width: 16px;
+                                height: 16px;
+                            }
+                            p {
+                                font-family: Helvetica;
+                                font-size: 11px;
+                                color: #6F6F6F;
+                                display: inline-block;
+                                margin: 2px;
+                                vertical-align: top;
+                            }
+                        }
+                        .total {
+                            margin-top: 15px;
+                            p {
+                                font-family: Helvetica-Bold;
+                                font-size: 18px;
+                                display: inline-block;
+                                margin: 0;
+                                vertical-align: top;
+                            }
+                            span {
+                                font-family: Helvetica-Light;
+                                font-size: 18px;
+                                text-align: right;
+                                display: inline-block;
+                                margin-left: 35px;
+                                span {
+                                    font-family: Helvetica-Light;
+                                    font-size: 10px;
+                                    display: block;
+                                }
+                            }
+                        }
+                        .btn {
+                            text-align: center;
+                            margin-top: 30px;
+                            button {
+                                background: #4A90E2;
+                                border-radius: 4px;
+                                color: #fff;
+                                font-size: 18px;
+                                padding: 12px 40px;
+                                border: none;
+                                img {
+                                    vertical-align: middle;
+                                    margin-left: 10px;
+                                    height: 25px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .alert {
+                border: 1px solid #D0021B;
+                text-align: left;
+                border-radius: 4px;
+                margin-top: 25px;
+                p {
+                    font-family: Helvetica-Oblique;
+                    font-size: 24px;
+                    color: #FFFFFF;
+                    background-color: #D0021B;
+                    width: 30px;
+                    padding: 24px 1px;
+                    margin: 0;
+                    display: inline-block;
+                    text-align: center;
+                }
+                .arrow-right {
+                    width: 0px;
+                    height: 0px;
+                    border-top: 8px solid transparent;
+                    border-bottom: 8px solid transparent;
+                    border-left: 10px solid #D0021B;
+                    display: inline-block;
+                    margin-left: -5px;
+                }
+                span {
+                    font-size: 10px;
+                    color: #6F6F6F;
+                    line-height: 20px;
+                    display: inline-block;
+                    vertical-align: text-bottom;
                 }
             }
         }
