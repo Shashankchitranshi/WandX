@@ -135,7 +135,7 @@ body {
         color: #FFFFFF; }
   body .order-tables {
     text-align: center;
-    padding: 40px; }
+    padding: 0 40px 40px; }
     body .order-tables .table-holder {
       width: 22%;
       margin: 0px 12px;
