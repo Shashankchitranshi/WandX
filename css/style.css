@@ -99,6 +99,28 @@ body {
         font-size: 20px;
         color: #27C359;
         margin: 0; }
+    body .trading-holder .day-holder {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0px 15px;
+      width: 12.66%; }
+      body .trading-holder .day-holder .price {
+        margin: 0;
+        width: 100%; }
+        body .trading-holder .day-holder .price p {
+          text-align: left;
+          font-size: 20px;
+          font-family: Helvetica-Light;
+          margin: 0; }
+      body .trading-holder .day-holder p {
+        margin: 6px 0 0 0;
+        text-align: right;
+        font-size: 10px;
+        font-family: Helvetica-Bold; }
+        body .trading-holder .day-holder p span {
+          font-size: 10px;
+          font-family: Helvetica-Bold;
+          color: #27C359; }
     body .trading-holder .xrp-btn {
       background-image: linear-gradient(-180deg, #9EEDC7 0%, #72BDAB 100%);
       border: 1px solid #E2E2E2;
