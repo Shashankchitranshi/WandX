@@ -2,7 +2,7 @@ body {
   margin: 0px; }
   body .header {
     background: #2C2950;
-    padding: 20px 60px;
+    padding: 20px 60px 0px;
     position: relative; }
     body .header h2 {
       font-family: Helvetica;
@@ -36,28 +36,47 @@ body {
         font-size: 20px;
         color: #AFF8C6;
         border-bottom: 2px solid #AFF8C6; }
-  body .token-holder {
+    body .header .tablinks {
+      background: none;
+      border: none;
+      margin-right: 80px;
+      padding-bottom: 15px; }
+      body .header .tablinks:focus {
+        outline: transparent; }
+      body .header .tablinks.active {
+        border-bottom: 4px solid #AFF8C6; }
+      body .header .tablinks a {
+        font-family: Helvetica;
+        font-size: 16px;
+        color: #FFFFFF;
+        text-decoration: none;
+        transition: all linear 0.15s; }
+  body .tabcontent .tab {
+    display: none; }
+  body .tabcontent .tab.active {
+    display: block; }
+  body .tabcontent .token-holder {
     background-color: #F3F3F3;
     padding: 20px 0px;
     text-align: center;
     margin-bottom: 20px; }
-    body .token-holder h5 {
+    body .tabcontent .token-holder h5 {
       font-family: Helvetica-Bold;
       font-size: 20px;
       color: #D1D1D1;
       margin: 0;
       display: inline-flex; }
-    body .token-holder input {
+    body .tabcontent .token-holder input {
       border: none; }
-    body .token-holder .input_field {
+    body .tabcontent .token-holder .input_field {
       border-bottom: 2px solid #979797;
       background-color: transparent; }
-      body .token-holder .input_field:focus {
+      body .tabcontent .token-holder .input_field:focus {
         outline: none; }
-  body .trading-holder {
+  body .tabcontent .trading-holder {
     text-align: center;
     margin-bottom: 40px; }
-    body .trading-holder .price {
+    body .tabcontent .trading-holder .price {
       width: 12.66%;
       display: inline-block;
       text-align: left;
@@ -67,16 +86,16 @@ body {
       margin: 0px 15px;
       min-width: 135px;
       padding: 6px; }
-      body .trading-holder .price span {
+      body .tabcontent .trading-holder .price span {
         font-family: Helvetica-Light;
         font-size: 10px;
         color: #302E2E; }
-      body .trading-holder .price p {
+      body .tabcontent .trading-holder .price p {
         font-family: Helvetica-Light;
         font-size: 20px;
         color: #27C359;
         margin: 0; }
-    body .trading-holder .xrp-btn {
+    body .tabcontent .trading-holder .xrp-btn {
       background-image: linear-gradient(-180deg, #9EEDC7 0%, #72BDAB 100%);
       border: 1px solid #E2E2E2;
       border-radius: 4px;
@@ -84,22 +103,22 @@ body {
       height: 55px;
       text-decoration: none;
       outline: none; }
-      body .trading-holder .xrp-btn p {
+      body .tabcontent .trading-holder .xrp-btn p {
         font-family: Helvetica-Bold;
         font-size: 20px;
         color: #FFFFFF; }
-  body .order-tables .table-holder {
+  body .tabcontent .order-tables .table-holder {
     width: 22%;
     margin: 0px 15px;
     border-collapse: collapse; }
-    body .order-tables .table-holder .order-main-header th {
+    body .tabcontent .order-tables .table-holder .order-main-header th {
       font-family: Helvetica-Bold;
       font-size: 14px;
       color: #302E2E;
       padding: 10px 0px 10px 10px;
       border: none; }
-    body .order-tables .table-holder th,
-    body .order-tables .table-holder td {
+    body .tabcontent .order-tables .table-holder th,
+    body .tabcontent .order-tables .table-holder td {
       padding: 8px;
       text-align: left;
       border-bottom: 1px solid #ddd;
