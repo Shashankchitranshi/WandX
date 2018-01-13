@@ -88,21 +88,36 @@ body {
         font-family: Helvetica-Bold;
         font-size: 20px;
         color: #FFFFFF; }
-  body .order-tables .table-holder {
-    width: 22%;
-    margin: 0px 15px;
-    border-collapse: collapse; }
-    body .order-tables .table-holder .order-main-header th {
-      font-family: Helvetica-Bold;
-      font-size: 14px;
-      color: #302E2E;
-      padding: 10px 0px 10px 10px;
-      border: none; }
-    body .order-tables .table-holder th,
-    body .order-tables .table-holder td {
-      padding: 8px;
-      text-align: left;
-      border-bottom: 1px solid #ddd;
-      width: 33%; }
+  body .order-tables {
+    text-align: center; }
+    body .order-tables .table-holder {
+      width: 21%;
+      margin: 0px 12px;
+      border-collapse: collapse;
+      display: inline-block; }
+      body .order-tables .table-holder table {
+        width: 100%; }
+        body .order-tables .table-holder table .order-main-header th {
+          font-family: Helvetica-Bold;
+          font-size: 14px;
+          color: #302E2E;
+          padding: 10px 0px 10px 10px;
+          border: none; }
+        body .order-tables .table-holder table .order-sub-heading th {
+          color: #BBBBBB !important;
+          height: 30px;
+          font-family: Helvetica-Light;
+          font-size: 12px; }
+        body .order-tables .table-holder table th,
+        body .order-tables .table-holder table td {
+          padding: 14px 0px 14px 10px;
+          text-align: left;
+          border-bottom: 1px solid #E2E2E2;
+          width: 33%;
+          color: #302E2E;
+          font-size: 12px; }
+          body .order-tables .table-holder table th:nth-child(2),
+          body .order-tables .table-holder table td:nth-child(2) {
+            color: #27C359; }
 
 /*# sourceMappingURL=style.css.map */

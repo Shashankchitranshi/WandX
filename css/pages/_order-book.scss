@@ -109,10 +109,14 @@ body {
         }
     }
     .order-tables {
+      text-align: center;
         .table-holder {
-            width: 22%;
-            margin: 0px 15px;
+            width: 21%;
+            margin: 0px 12px;
             border-collapse: collapse;
+            display: inline-block;
+          table{
+            width: 100%;
             .order-main-header {
                 th {
                     font-family: Helvetica-Bold;
@@ -120,16 +124,31 @@ body {
                     color: #302E2E;
                     padding: 10px 0px 10px 10px;
                     border: none;
+
                     // height: 33px;
+                }
+            }
+            .order-sub-heading{
+                th{
+                  color: #BBBBBB !important;
+                  height: 30px;
+                  font-family: Helvetica-Light;
+                  font-size: 12px;
                 }
             }
             th,
             td {
-                padding: 8px;
+                padding:14px 0px 14px 10px;
                 text-align: left;
-                border-bottom: 1px solid #ddd;
+                border-bottom: 1px solid #E2E2E2;
                 width: 33%;
+                color: #302E2E;
+                font-size: 12px;
+                &:nth-child(2){
+                  color: #27C359;
+                }
             }
+          }
         }
     }
 }
