@@ -5,15 +5,12 @@ body {
         background: #2C2950;
         padding: 20px 60px 0px;
         position: relative;
-        h2 {
-            font-family: Helvetica;
-            font-size: 18px;
-            color: #6BB4ED;
-            display: inline-block;
+        img {
+            height: 50px;
         }
         .userName {
             position: absolute;
-            top: 30px;
+            top: 18px;
             right: 60px;
             img {
                 width: 30px;
@@ -30,12 +27,14 @@ body {
             }
         }
         .ethValue {
-            margin: 30px 0;
+            margin: 0px 18px 15px;
+            display: inline-block;
+            vertical-align: top;
             p {
                 font-family: Helvetica-Light;
-                font-size: 10px;
+                font-size: 18px;
                 color: #AFF8C6;
-                margin: 3px;
+                margin: 13px;
             }
             span {
                 font-family: Helvetica-Light;
@@ -48,7 +47,7 @@ body {
             background: none;
             border: none;
             margin-right: 80px;
-            padding-bottom: 15px;
+            padding-bottom: 5px;
             &:focus {
                 outline: transparent;
             }
@@ -358,6 +357,10 @@ body {
                                 font-size: 18px;
                                 padding: 12px 40px;
                                 border: none;
+                                cursor: pointer;
+                                &:focus {
+                                    outline: none;
+                                }
                                 img {
                                     vertical-align: middle;
                                     margin-left: 10px;
@@ -409,6 +412,7 @@ body {
         top: 70%;
         left: 78px;
         padding-bottom: 40px;
+        text-align: left;
         p {
             font-size: 14px;
             display: inline-block;
@@ -466,6 +470,155 @@ body {
         }
         .slider.round:before {
             border-radius: 50%;
+        }
+    }
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 80px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px 40px;
+            border: 1px solid #888;
+            width: 50%;
+            .close {
+                color: #aaaaaa;
+                float: right;
+                font-size: 10px;
+                font-weight: bold;
+                &:hover {
+                    color: #000;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+                &:focus {
+                    color: #000;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            }
+            .innerContent {
+                p {
+                    font-family: Helvetica;
+                    font-size: 20px;
+                    color: #2C2950;
+                    span {
+                        font-family: Helvetica-Bold;
+                        color: #46b74b;
+                    }
+                }
+                table {
+                    border: 1px solid #46b74b;
+                    border-bottom: 0;
+                    border-right: 0;
+                    tr {
+                        th {
+                            &.col1 {
+                                width: 15% !important;
+                                border-bottom: 0;
+                                text-align: center;
+                                border-bottom: 1px solid #46b74b;
+                                border-right: 1px solid #46b74b;
+                            }
+                            &.col2 {
+                                width: 20% !important;
+                                border-bottom: 0;
+                                text-align: center;
+                                border-bottom: 1px solid #46b74b;
+                                border-right: 1px solid #46b74b;
+                            }
+                            &.col3 {
+                                width: 30% !important;
+                                border-bottom: 0;
+                                text-align: center;
+                                border-bottom: 1px solid #46b74b;
+                                border-right: 1px solid #46b74b;
+                            }
+                            &.col4 {
+                                width: 35% !important;
+                                border-bottom: 0;
+                                text-align: center;
+                                border-bottom: 1px solid #46b74b;
+                                border-right: 1px solid #46b74b;
+                            }
+                            p {
+                                font-family: Helvetica;
+                                font-size: 14px;
+                                color: #2C2950;
+                                margin: 0;
+                                &.pad {
+                                    padding: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .wandxToken {
+                    p {
+                        font-family: Helvetica-Light;
+                        font-size: 14px;
+                        color: #2C2950;
+                        text-align: left;
+                    }
+                    table {
+                        border: 1px solid #46b74b;
+                        border-bottom: 0;
+                        .right {
+                            float: right;
+                            margin-right: 20px;
+                        }
+                        td {
+                            border-bottom: 1px solid #46b74b;
+                            p {
+                                display: inline-block;
+                            }
+                            &.select {
+                                p {
+                                    font-family: Helvetica;
+                                    font-size: 14px;
+                                    color: #2C2950;
+                                    margin: 5px 15px;
+                                }
+                            }
+                            &.eth {
+                                input[type="checkbox"] {
+                                    margin: 0;
+                                    width: 16px;
+                                    height: 16px;
+                                }
+                                p {
+                                    font-family: Helvetica;
+                                    font-size: 20px;
+                                    color: #2C2950;
+                                    font-weight: 700;
+                                }
+                            }
+                        }
+                    }
+                }
+                .executeBtn {
+                    text-align: right;
+                    margin-top: 20px;
+                    button {
+                        background-color: #20d07f;
+                        border: none;
+                        padding: 16px 20px;
+                        color: #fff;
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                }
+            }
         }
     }
 }
