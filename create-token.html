@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WandX</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel=stylesheet type=text/css href="fonts/stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <div class="header">
+            <img src="images/wandxlogo.png" alt="">
+            <div class="userName">
+                <div class="dropdown">
+                    <img class="dropbtn" onclick="myFunction() " src="images/user.jpg" alt="">
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Profile</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="#">Logout</a>
+                    </div>
+                </div>
+                <p>User Name</p>
+            </div>
+            <div class="faq-tabs">
+                <button class="tablinks active">
+                    <a href="#tab1">Create Token</a>
+                </button>
+            </div>
+        </div>
+    </section>
+    <div class="tabcontent">
+        <div id="tab1" class="tab active">
+          <section class="create-token-holder">
+              <div class="token-panel-holder">
+                <form>
+                    <div class="basic-ip">Basic Inputs</div>
+                    <label class="form-label">Token name</label>
+                    <input  class="form-input-holder" placeholder="Token name" >
+                    <label class="form-label">Token symbol</label>
+                    <input  class="form-input-holder" placeholder="Token symbol" >
+                    <div class="min-amt">Min withdrawal amount：10</div>
+                    <p class="fee">Fee : </p>
+                    <p class="fee">0.5 <span class="">KCS</span></p>
+                    <div class="confirm-btn">
+                        Confirm
+                    </div>
+                </form>
+              </div>
+          </section>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-links">
+            <div class="footer-col">
+                <p class="footer-title">
+                    About Us
+                </p>
+                <p><a href="how-to-use-wandx.html" target="_blank">How to use wandx</a></p>
+                <p><a href="https://www.gitbook.com/book/wandxdapp/wandx-whitepaper/details" target="_blank">White Paper</a></p>
+            </div>
+            <div class="footer-col">
+                <p class="footer-title">
+                    Legal
+                </p>
+                <p><a href="https://www.gitbook.com/book/wandxdapp/terms-of-use/details" target="_blank">Terms of Use</a></p>
+                <p><a href="https://www.gitbook.com/book/wandxdapp/wandx-privacy-policy/details" target="_blank">Privacy Policy</a></p>
+            </div>
+            <div class="footer-col">
+                <p class="footer-title">
+                    Trading
+                </p>
+                <p><a href="">API Documentation</a></p>
+                <p id="myBtn1">Fees</p>
+                <div id="myModal1" class="modal">
+                    <div class="modal-content modal-content1">
+
+                        <div class="innerContent">
+                            <p>Trading Fee</span>
+                            </p>
+                            <table cellspacing=0>
+                                <tr cellspacing=0>
+                                    <th cellspacing=0 class="col3">
+                                        <p>EXCHANGE FEES</p>
+                                    </th>
+                                    <th cellspacing=0 class="col2">
+                                        <p class="pad">0.001</p>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th cellspacing=0 class="col2">
+                                        <p>GAS FEE</p>
+                                    </th>
+                                    <th cellspacing=0 class="col4">
+                                        <p class="pad">Depends on Ehtereum Blockchain Price</p>
+                                    </th>
+                                </tr>
+                            </table>
+                            <div class="executeBtn close1">
+                                <button>OK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-col">
+                <p class="footer-title">
+                    Contact Us
+                </p>
+                <p>Support：support@wandx.co</p>
+                <p>Business：business@wandx.co</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/wandx.co/" target="_blank"><img src="images/social-facebook.svg"> </a>
+                <a href="https://twitter.com/WandXDapp" target="_blank"><img src="images/social-twitter.svg"> </a>
+                <a href="https://github.com/WandXDapp" target="_blank"><img src="images/social-github.svg"> </a>
+                <a href="https://medium.com/wandx" target="_blank"><img src="images/social-medium.svg"> </a>
+                <a href="https://t.me/wandxbeta" target="_blank"><img src="images/social-telegram.svg"> </a>
+                <a href="https://www.instagram.com/wandx.co/" target="_blank"><img src="images/social-instagram.svg"> </a>
+            </div>
+        </div>
+    </div>
+    <!-- TradingView Widget BEGIN -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>
+        var modal = document.getElementById('myModal');
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        var modalnew = document.getElementById('myModal1');
+        var btnnew = document.getElementById("myBtn1");
+        var spanclose = document.getElementsByClassName("close1")[0];
+        btnnew.onclick = function() {
+            modalnew.style.display = "block";
+        }
+        spanclose.onclick = function() {
+            modalnew.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modalnew) {
+                modalnew.style.display = "none";
+
+            }
+        }
+    </script>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+        $(document).ready(function(){
+            $(".question").click(function(){
+                 // var clickedone = $(this).parent();
+                 // var child = $(clickedone).children();
+                 // console.log(currentchild);
+                 // console.log(child);
+                 var currentchild = $(this).parent().children('.answer');
+                 $(".answer").slideUp(300);
+                 $(currentchild).slideToggle(300);
+                 $(currentchild).click(function(){
+                    $(".answer").slideUp(300);
+                 });
+              })
+        });
+
+    </script>
+</body>
+
+</html>
